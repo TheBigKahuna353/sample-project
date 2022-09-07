@@ -14,17 +14,17 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sys
-import SampleModule
+import hooman
 from sphinx_gallery.sorting import FileNameSortKey
 
 # -- Project information -----------------------------------------------------
 
-project = 'sample-project'
-copyright = '2020, <Author>'
-author = '<Author>'
+project = 'hooman'
+copyright = '2020, <sdfsdf>'
+author = '<asdsad>'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '0.9.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -53,7 +53,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'classic'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -63,16 +63,16 @@ html_static_path = ['_static']
 # sphinx-gallery configuration
 sphinx_gallery_conf = {
     # path to your example scripts
-    'examples_dirs': ['../sample-gallery-1', '../sample-gallery-2'],
+    'examples_dirs': ['../sample-gallery-1'],
     # path to where to save gallery generated output
-    'gallery_dirs': ['auto_gallery-1', 'auto_gallery-2'],
+    'gallery_dirs': ['auto_gallery-1'],
     # specify that examples should be ordered according to filename
     'within_subsection_order': FileNameSortKey,
     # directory where function granular galleries are stored
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
-    'doc_module': ('SampleModule'),
+    'doc_module': ('Hooman'),
 }
 
 # configuration for intersphinx: refer to the Python standard library.
